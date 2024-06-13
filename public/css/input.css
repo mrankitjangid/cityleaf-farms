@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.question {
+    @apply bg-yellow-500 p-4 hover:cursor-pointer w-full
+}
+
+.answer {
+    @apply p-4 bg-yellow-400 text-black
+}
+
+.input {
+    @apply border-b border-b-black rounded-xl w-full text-center h-12 bg-transparent  placeholder:text-black font-semibold
+}

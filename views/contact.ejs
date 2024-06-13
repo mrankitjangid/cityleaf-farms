@@ -1,0 +1,18 @@
+<section id="contact" class="h-screen bg-cover bg-center flex justify-center items-center" style="background-image: url('/images/background-contact-page.jpeg')">
+    <div class="flex justify-center items-center md:w-2/3 lg:w-1/2 md:h-4/5 bg-white backdrop-blur-lg bg-opacity-15 sm:rounded-3xl text-black">
+        <form class="m-8 md:m-16 grid lg:grid-cols-2 text-xl gap-8" action="/contact/thanks" method="post">
+            <div>
+                <input class="input" type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div>
+                <input class="input" type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="lg:col-span-2">
+                <input class="input border border-black min-h-52" type="text" name="message" placeholder="Your Message" required>
+            </div>
+            <div class="lg:col-span-2 flex justify-center">
+                <input type="submit" class="rounded-2xl text-center h-12 hover:cursor-pointer border border-black w-40 placeholder:text-black font-semibold hover:bg-yellow-500">
+            </div>
+        </form>
+    </div>
+</section>
