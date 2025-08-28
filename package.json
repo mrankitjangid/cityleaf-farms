@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "build": "npx tailwindcss -i ./public/css/input.css -o ./public/css/styles.css -w",
+    "dev-build": "npx tailwindcss -i ./public/css/input.css -o ./public/css/styles.css -w",
+    "build": "npx tailwindcss -i ./public/css/input.css -o ./public/css/styles.css",
     "start": "node app.js"
   },
   "author": "Ankit Jangid",
