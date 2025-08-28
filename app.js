@@ -46,7 +46,10 @@ app.post('/getcart', async (req, res) => {
     res.send(response);
 });
 
-
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-});
+if( process.env.ENV == 'dev' ) {
+    app.listen(PORT, () => {
+        console.log(`Server listening on port ${PORT}`);
+    });
+} else {
+    module.exports = app;
+}
